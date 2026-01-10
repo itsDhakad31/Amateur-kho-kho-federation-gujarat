@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Registration - Amateur Kho Kho Federation Gujarat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-display">
+                <span>📅</span>
+                <p id="current-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x50?text=AKKFG" alt="AKKFG Logo">
+                <h1>Amateur Kho Kho Federation Gujarat</h1>
+            </div>
+            <div class="header-right">
+                <div class="profile">
+                    <a href="login.html">Login</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li><a href="pages/results.html">Results</a></li>
+                <li><a href="pages/locators.html">Locators</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <form action="/register/coach" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="mobile" name="mobile" required><br>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" required></textarea><br>
+
+            <label for="photograph">Photograph:</label>
+            <input type="file" id="photograph" name="photograph" required><br>
+
+            <label for="aadhar">Aadhar:</label>
+            <input type="file" id="aadhar" name="aadhar" required><br>
+
+            <label for="pan">PAN Card:</label>
+            <input type="file" id="pan" name="pan" required><br>
+
+            <label for="birthCertificate">Birth Certificate:</label>
+            <input type="file" id="birthCertificate" name="birthCertificate" required><br>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+            </label><br>
+
+            <button type="submit" class="btn-submit">Complete Registration</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amateur Kho Kho Federation Gujarat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Handle form submission with AJAX for better UX
+      document.querySelector('form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = 'Registering...';
+        submitBtn.disabled = true;
+        
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
+          });
+          
+          const data = await response.json();
+          
+          if (data.success) {
+            // Show success message with ID
+            alert('Registration successful!\n\nYour Unique ID: ' + data.uniqueId + '\n\nRedirecting to ID card...');
+            // Redirect to ID card page
+            window.location.href = '/idcard/' + data.uniqueId;
+          } else {
+            alert('Registration failed: ' + (data.message || 'Unknown error'));
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+          }
+        } catch (error) {
+          console.error('Registration error:', error);
+          alert('An error occurred during registration. Please try again.');
+          submitBtn.textContent = originalBtnText;
+          submitBtn.disabled = false;
+        }
+      });
+    </script>
+</body>
+</html>

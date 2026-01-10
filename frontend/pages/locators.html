@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locators - Amateur Kho Kho Federation Gujarat</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-display">
+                <span>📅</span>
+                <p id="current-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x50?text=AKKFG" alt="AKKFG Logo">
+                <h1>Amateur Kho Kho Federation Gujarat</h1>
+            </div>
+            <div class="header-right">
+                <div class="profile">
+                    <a href="../login.html">Login</a>
+                    <a href="../register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="locators.html" class="active">Locators</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="text-center">
+            <h2>Find Kho Kho Grounds & Facilities</h2>
+            <p>Locate training grounds, stadiums, and sports complexes across Gujarat</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📍 Ahmedabad</h3>
+                <p><strong>Gujarat Sports Complex</strong></p>
+                <p>Address: Stadium Road, Ahmedabad</p>
+                <p>Facilities: Professional kho kho ground, changing rooms, seating capacity 5000</p>
+                <p>Contact: +91 79 1234 5678</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Surat</h3>
+                <p><strong>Surat Sports Academy</strong></p>
+                <p>Address: Ring Road, Surat</p>
+                <p>Facilities: Training ground, coaching center, equipment available</p>
+                <p>Contact: +91 261 1234 5678</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Vadodara</h3>
+                <p><strong>Vadodara Stadium</strong></p>
+                <p>Address: RC Dutt Road, Vadodara</p>
+                <p>Facilities: Championship-level ground, spectator seating, floodlights</p>
+                <p>Contact: +91 265 1234 5678</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Rajkot</h3>
+                <p><strong>Rajkot Sports Complex</strong></p>
+                <p>Address: University Road, Rajkot</p>
+                <p>Facilities: Multiple grounds, training facilities, cafeteria</p>
+                <p>Contact: +91 281 1234 5678</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Bhavnagar</h3>
+                <p><strong>Bhavnagar Ground</strong></p>
+                <p>Address: Station Road, Bhavnagar</p>
+                <p>Facilities: Practice ground, basic amenities</p>
+                <p>Contact: +91 278 1234 5678</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Jamnagar</h3>
+                <p><strong>Jamnagar Sports Center</strong></p>
+                <p>Address: College Road, Jamnagar</p>
+                <p>Facilities: Training ground, coaching available</p>
+                <p>Contact: +91 288 1234 5678</p>
+            </div>
+        </div>
+
+        <section class="notice" style="margin-top: var(--spacing-2xl);">
+            <h2>Need Help Finding a Ground?</h2>
+            <p>Can't find a kho kho ground near you? Contact us and we'll help you locate the nearest facility. We're continuously working to expand kho kho infrastructure across Gujarat.</p>
+            <p><strong>Email:</strong> info@akkfg.in | <strong>Phone:</strong> +91 1234567890</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About AKKFG</h4>
+                    <p>Promoting and developing Kho Kho across Gujarat.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@akkfg.in</p>
+                    <p>📱 +91 1234567890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amateur Kho Kho Federation Gujarat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-IN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

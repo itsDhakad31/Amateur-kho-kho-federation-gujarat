@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Amateur Kho Kho Federation Gujarat</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-display">
+                <span>📅</span>
+                <p id="current-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x50?text=AKKFG" alt="AKKFG Logo">
+                <h1>Amateur Kho Kho Federation Gujarat</h1>
+            </div>
+            <div class="header-right">
+                <div class="profile">
+                    <a href="../login.html">Login</a>
+                    <a href="../register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="locators.html">Locators</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="text-center">
+            <h2>Get in Touch</h2>
+            <p>We're here to help with any questions about kho kho in Gujarat</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📧 Email Us</h3>
+                <p><strong>General Inquiries:</strong></p>
+                <p>info@akkfg.in</p>
+                <p><strong>Registration Support:</strong></p>
+                <p>registration@akkfg.in</p>
+                <p><strong>Events & Tournaments:</strong></p>
+                <p>events@akkfg.in</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Call Us</h3>
+                <p><strong>Office:</strong></p>
+                <p>+91 1234 567 890</p>
+                <p><strong>Support:</strong></p>
+                <p>+91 9876 543 210</p>
+                <p><strong>Hours:</strong></p>
+                <p>Mon-Sat: 10:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Visit Us</h3>
+                <p><strong>Head Office:</strong></p>
+                <p>Amateur Kho Kho Federation Gujarat</p>
+                <p>Sports Complex Building</p>
+                <p>Ahmedabad, Gujarat - 380001</p>
+                <p>India</p>
+            </div>
+        </div>
+
+        <section style="margin-top: var(--spacing-2xl);">
+            <form action="/contact" method="post">
+                <h2>Send Us a Message</h2>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="registration">Registration Query</option>
+                    <option value="events">Events & Tournaments</option>
+                    <option value="results">Results & Rankings</option>
+                    <option value="facilities">Facilities & Grounds</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="notice" style="margin-top: var(--spacing-2xl);">
+            <h2>Office Hours</h2>
+            <p><strong>Monday to Friday:</strong> 10:00 AM - 6:00 PM</p>
+            <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Sunday & Public Holidays:</strong> Closed</p>
+            <p style="margin-top: var(--spacing-md);">For urgent matters outside office hours, please send an email and we'll respond as soon as possible.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About AKKFG</h4>
+                    <p>Promoting and developing Kho Kho across Gujarat.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="locators.html">Locators</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <p>📧 info@akkfg.in</p>
+                    <p>📱 +91 1234567890</p>
+                    <p>📍 Ahmedabad, Gujarat</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amateur Kho Kho Federation Gujarat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-IN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

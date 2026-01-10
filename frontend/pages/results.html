@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Amateur Kho Kho Federation Gujarat</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-display">
+                <span>📅</span>
+                <p id="current-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x50?text=AKKFG" alt="AKKFG Logo">
+                <h1>Amateur Kho Kho Federation Gujarat</h1>
+            </div>
+            <div class="header-right">
+                <div class="profile">
+                    <a href="../login.html">Login</a>
+                    <a href="../register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="results.html" class="active">Results</a></li>
+                <li><a href="locators.html">Locators</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="text-center">
+            <h2>Match Results & Rankings</h2>
+            <p>View the latest tournament results and team standings</p>
+        </section>
+
+        <div class="notice">
+            <h2>Recent Championship Results</h2>
+            <p><strong>Gujarat State Championship 2025 - Final Results</strong></p>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 10px 0;">🥇 <strong>Winner:</strong> Ahmedabad District Team</li>
+                <li style="margin: 10px 0;">🥈 <strong>Runner-up:</strong> Surat District Team</li>
+                <li style="margin: 10px 0;">🥉 <strong>Third Place:</strong> Vadodara District Team</li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>State Championship 2025</h3>
+                <p><strong>Champion:</strong> Ahmedabad District</p>
+                <p><strong>Date:</strong> December 2025</p>
+                <p>An exciting championship with 24 teams competing for the title. Ahmedabad secured victory with exceptional performance.</p>
+            </div>
+
+            <div class="card">
+                <h3>District Tournament - North Zone</h3>
+                <p><strong>Champion:</strong> Mehsana District</p>
+                <p><strong>Date:</strong> November 2025</p>
+                <p>North zone district championship saw strong competition among 12 teams.</p>
+            </div>
+
+            <div class="card">
+                <h3>Women's Championship 2025</h3>
+                <p><strong>Champion:</strong> Rajkot District</p>
+                <p><strong>Date:</strong> October 2025</p>
+                <p>Historic women's championship with record participation from across the state.</p>
+            </div>
+
+            <div class="card">
+                <h3>Junior Championship 2025</h3>
+                <p><strong>Champion:</strong> Surat District</p>
+                <p><strong>Date:</strong> September 2025</p>
+                <p>Under-18 championship showcasing emerging talent in Gujarat kho kho.</p>
+            </div>
+        </div>
+
+        <section class="notice" style="margin-top: var(--spacing-2xl);">
+            <h2>How to View Detailed Results</h2>
+            <p>Detailed match scorecards, player statistics, and tournament brackets will be published here after each event. Check back regularly for updates on ongoing tournaments and championships.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About AKKFG</h4>
+                    <p>Promoting and developing Kho Kho across Gujarat.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@akkfg.in</p>
+                    <p>📱 +91 1234567890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amateur Kho Kho Federation Gujarat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-IN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

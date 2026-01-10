@@ -1,0 +1,44 @@
+2026-01-04T08:25:20.365Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T08:25:20.371Z Google Drive upload failed: part.body.pipe is not a function
+2026-01-04T13:18:23.343Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T13:18:23.353Z Google Drive upload failed: part.body.pipe is not a function
+2026-01-04T16:00:16.054Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T16:00:16.064Z Google Drive upload failed: part.body.pipe is not a function
+2026-01-04T16:02:50.687Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T16:02:50.695Z Google Drive upload failed: part.body.pipe is not a function
+2026-01-04T16:54:27.683Z Coach upload: req.files keys = ["photograph"]
+2026-01-04T16:54:27.693Z Google Drive upload failed: part.body.pipe is not a function
+2026-01-04T20:21:15.923Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T20:21:15.927Z Supabase upload failed: upload is not a function
+2026-01-04T20:21:34.906Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T20:21:34.908Z Supabase upload failed: upload is not a function
+2026-01-04T20:26:13.070Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T20:26:13.074Z Supabase upload failed: upload is not a function
+2026-01-04T20:34:16.788Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-04T20:34:16.955Z Supabase upload failed: fetch failed
+2026-01-05T05:58:38.074Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-05T05:58:41.660Z Uploaded photograph to Supabase path=coach/akkfg27/1767592718075-Document.png
+2026-01-05T05:58:42.286Z Uploaded aadhar to Supabase path=coach/akkfg27/1767592721661-Ghep Bong Da Pin.jpeg
+2026-01-05T05:58:43.388Z Uploaded pan to Supabase path=coach/akkfg27/1767592722286-Document.png
+2026-01-05T05:58:44.684Z Uploaded birthCertificate to Supabase path=coach/akkfg27/1767592723388-Document.png
+2026-01-05T06:21:07.382Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-05T06:21:09.572Z Supabase upload failed: Bucket not found
+2026-01-05T06:26:30.039Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-05T06:26:32.356Z Supabase upload failed: Bucket not found
+2026-01-05T06:29:39.829Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-05T06:29:41.702Z Supabase upload failed: Bucket not found
+2026-01-05T06:36:46.312Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-05T06:36:49.368Z Uploaded photograph to Supabase path=coaches/nmh/photograph.png
+2026-01-05T06:36:50.714Z Uploaded aadhar to Supabase path=coaches/nmh/aadhar.png
+2026-01-05T06:36:51.986Z Uploaded pan to Supabase path=coaches/nmh/pan.png
+2026-01-05T06:36:53.240Z Uploaded birthCertificate to Supabase path=coaches/nmh/birthCertificate.png
+2026-01-06T10:28:43.210Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-06T10:28:45.806Z Uploaded photograph to Supabase path=coaches/mihul-dhakad/photograph.jpg
+2026-01-06T10:28:47.509Z Uploaded aadhar to Supabase path=coaches/mihul-dhakad/aadhar.jpg
+2026-01-06T10:28:49.430Z Uploaded pan to Supabase path=coaches/mihul-dhakad/pan.jpg
+2026-01-06T10:28:51.256Z Uploaded birthCertificate to Supabase path=coaches/mihul-dhakad/birthCertificate.jpg
+2026-01-06T10:31:10.845Z Coach upload: req.files keys = ["photograph","aadhar","pan","birthCertificate"]
+2026-01-06T10:31:14.095Z Uploaded photograph to Supabase path=coaches/mihuldkd/photograph.jpg
+2026-01-06T10:31:19.907Z Uploaded aadhar to Supabase path=coaches/mihuldkd/aadhar.jpg
+2026-01-06T10:31:22.735Z Uploaded pan to Supabase path=coaches/mihuldkd/pan.jpg
+2026-01-06T10:31:25.103Z Uploaded birthCertificate to Supabase path=coaches/mihuldkd/birthCertificate.jpg

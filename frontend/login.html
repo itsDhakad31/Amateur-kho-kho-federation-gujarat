@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Amateur Kho Kho Federation Gujarat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-display">
+                <span>📅</span>
+                <p id="current-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x50?text=AKKFG" alt="AKKFG Logo">
+                <h1>Amateur Kho Kho Federation Gujarat</h1>
+            </div>
+            <div class="header-right">
+                <div class="profile">
+                    <a href="register.html">Register</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li><a href="pages/results.html">Results</a></li>
+                <li><a href="pages/locators.html">Locators</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <form action="/login" method="post">
+            <h2>🔐 Member Login</h2>
+            <p class="text-center" style="color: var(--text-secondary); margin-bottom: var(--spacing-xl);">
+                Enter your unique ID to view your ID card and profile
+            </p>
+            
+            <label for="uniqueId">Unique ID:</label>
+            <input type="text" id="uniqueId" name="uniqueId" placeholder="Enter your unique ID" required>
+            
+            <button type="submit" class="btn-submit">View ID Card</button>
+            
+            <p class="text-center" style="margin-top: var(--spacing-lg); color: var(--text-secondary);">
+                Don't have an account? <a href="register.html" style="color: var(--primary-blue); font-weight: 600;">Register here</a>
+            </p>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amateur Kho Kho Federation Gujarat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

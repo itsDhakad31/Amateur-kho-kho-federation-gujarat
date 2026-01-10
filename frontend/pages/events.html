@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Amateur Kho Kho Federation Gujarat</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-display">
+                <span>📅</span>
+                <p id="current-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x50?text=AKKFG" alt="AKKFG Logo">
+                <h1>Amateur Kho Kho Federation Gujarat</h1>
+            </div>
+            <div class="header-right">
+                <div class="profile">
+                    <a href="../login.html">Login</a>
+                    <a href="../register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="locators.html">Locators</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="text-center">
+            <h2>Upcoming Events & Tournaments</h2>
+            <p>Stay updated with the latest kho kho events, championships, and training camps</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>State Championship 2026</h3>
+                <p><strong>Date:</strong> March 15-20, 2026</p>
+                <p><strong>Venue:</strong> Gujarat Sports Complex, Ahmedabad</p>
+                <p>Annual state-level championship featuring top teams from across Gujarat. Registration opens February 1st.</p>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>District Level Tournament</h3>
+                <p><strong>Date:</strong> February 10-12, 2026</p>
+                <p><strong>Venue:</strong> Various Districts</p>
+                <p>District-wise tournaments to select teams for state championship. Open for all age categories.</p>
+                <a href="#" class="btn btn-outline">Register Now</a>
+            </div>
+
+            <div class="card">
+                <h3>Coaching Camp</h3>
+                <p><strong>Date:</strong> January 20-25, 2026</p>
+                <p><strong>Venue:</strong> Sports Academy, Surat</p>
+                <p>Intensive training camp for aspiring coaches and players. Expert trainers from national team.</p>
+                <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+
+            <div class="card">
+                <h3>Junior Championship</h3>
+                <p><strong>Date:</strong> April 5-8, 2026</p>
+                <p><strong>Venue:</strong> Vadodara Stadium</p>
+                <p>Championship for under-18 players. Great opportunity for young talent to showcase skills.</p>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>Women's Tournament</h3>
+                <p><strong>Date:</strong> May 12-15, 2026</p>
+                <p><strong>Venue:</strong> Rajkot Sports Complex</p>
+                <p>Dedicated tournament for women's teams. Promoting women participation in kho kho.</p>
+                <a href="#" class="btn btn-outline">Register Team</a>
+            </div>
+
+            <div class="card">
+                <h3>Referee Training Program</h3>
+                <p><strong>Date:</strong> February 1-3, 2026</p>
+                <p><strong>Venue:</strong> AKKFG Office, Ahmedabad</p>
+                <p>Certification program for aspiring referees and umpires. Limited seats available.</p>
+                <a href="#" class="btn btn-outline">Apply Now</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About AKKFG</h4>
+                    <p>Promoting and developing Kho Kho across Gujarat.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@akkfg.in</p>
+                    <p>📱 +91 1234567890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amateur Kho Kho Federation Gujarat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-IN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
