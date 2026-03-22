@@ -70,11 +70,24 @@ Full-stack app for player registration, events, news, and admin management.
 - `npm run lint` - TypeScript check
 
 ## Deployment
-**Cloudflare Workers:** `wrangler.toml` ready.
+**Render:** this repo includes [render.yaml](/Users/mihuldhakad/Downloads/amateur-kho-kho-federation-gujarat/render.yaml) for a single Node web service.
+
+Build command:
+```bash
+npm install && npm run build
 ```
-npm i -g wrangler
-wrangler login
-wrangler deploy
+
+Start command:
+```bash
+npm start
 ```
+
+Set these environment variables in Render:
+- `SUPABASE_URL`
+- `SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `JWT_SECRET`
+- `DEFAULT_ADMIN_EMAIL`
+- `DEFAULT_ADMIN_PASSWORD`
 
 Enjoy managing Amateur Kho-Kho Federation Gujarat! 🥅🇮🇳
